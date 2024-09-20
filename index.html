@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Employee Database System</title>
+  </head>
+  <body>
+    <div class="employee-app">
+      <header class="employeeHeader">
+        <h1>Employee Database System</h1>
+        <button class="createEmployee">Add Button</button>
+      </header>
+      <main class="employeeDataTable">
+        <div class="employeeListContainer">
+          <span class="employee_title">Employee List</span>
+          <div class="employListDetails"></div>
+        </div>
+        <div class="employeeInfo">
+          <span class="employee_single">Employee Information</span>
+          <div class="employeeSingleForm"></div>
+        </div>
+      </main>
+    </div>
+
+    <!--- Add Employee form -->
+    <div class="addEmployee">
+      <form class="addEmployee_create">
+        <div class="formHeader">
+          Add a new Employee
+          <button class="formClose">X</button>
+        </div>
+
+        <div>
+          <input
+            type="text"
+            name="FirstName"
+            placeholder="first Name"
+            required
+          />
+          <input type="text" name="lastName" placeholder="last Name" required />
+          <input
+            type="text"
+            name="imageUrl"
+            placeholder="Image URL (Optional)"
+          />
+          <input type="email" name="email" placeholder="Email" required />
+          <input
+            type="number"
+            name="contactNumber"
+            placeholder="Contact"
+            required
+          />
+          <input type="number" name="salary" placeholder="Salary" required />
+          <input type="text" name="address" placeholder="Address" required />
+          <input
+            type="date"
+            name="dob"
+            placeholder="Date of Birth"
+            class="addEmployee_create--dob"
+            required
+          />
+          <input
+            type="submit"
+            class="addEmployee_create--submit"
+            value="Submit"
+          />
+        </div>
+      </form>
+    </div>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script src="index.js"></script>
+  </body>
+</html>
